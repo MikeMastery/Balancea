@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividad_registrar"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Usuario"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#1B9797"
+        >
+
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:src="@drawable/verificar"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+    </ImageView>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:id="@+id/txtnc"
+        android:layout_marginTop="18dp"
+        android:textSize="18sp"
+        android:hint="Ingrese nombres y apellidos"
+        android:inputType="text"
+        android:textColorHint="#000"
+        android:layout_gravity="center">
+    </EditText>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:id="@+id/txtcd"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:hint="Ingrese la ciudad"
+        android:inputType="text"
+        android:textColorHint="#000"
+        android:layout_gravity="center">
+    </EditText>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:id="@+id/txttc"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:hint="Ingrese numero telefonico"
+        android:inputType="number"
+        android:textColorHint="#000"
+        android:layout_gravity="center">
+    </EditText>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:id="@+id/txtcorrc"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:hint="Ingrese un Correo"
+        android:inputType="text"
+        android:textColorHint="#000"
+        android:layout_gravity="center">
+    </EditText>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:id="@+id/txtcontraseña"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:hint="Ingrese una Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#000"
+        android:layout_gravity="center">
+    </EditText>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="REGISTRARSE"
+        android:id="@+id/btnagregar"
+        android:backgroundTint="#1B9797"
+        android:textSize="25dp"
+        android:textStyle="bold">
+    </Button>
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="210dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="REGRESAR"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:backgroundTint="#5BEA23">
+    </Button>
+
+
+</LinearLayout>

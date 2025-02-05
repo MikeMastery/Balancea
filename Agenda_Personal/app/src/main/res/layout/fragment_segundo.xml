@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Calculadora"
+            android:textColor="#1B9797"
+            android:textSize="24dp"
+            android:paddingTop="-5dp"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/imagen1" >
+    </ImageView>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:hint="Numero uno"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="22dp"
+        android:textColorHint="@color/black"
+        android:id="@+id/etnumero1"
+        android:gravity="center_vertical|center_horizontal">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:hint="Numero dos"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="22dp"
+        android:textColorHint="@color/black"
+        android:id="@+id/etnumero2"
+        android:gravity="center_vertical|center_horizontal">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Elija una Operación:"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_gravity="center">
+    </TextView>
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/operation_icon_res"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:onClick="performSum"
+            android:src="@drawable/resta" />
+
+        <ImageView
+            android:id="@+id/operation_icon_sum"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:clickable="true"
+            android:onClick="performSum"
+            android:src="@drawable/suma" />
+
+        <ImageView
+            android:id="@+id/operation_icon_mul"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="190dp"
+            android:clickable="true"
+            android:onClick="performSum"
+            android:src="@drawable/mult" />
+
+        <ImageView
+            android:id="@+id/operation_icon_div"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="280dp"
+            android:clickable="true"
+            android:onClick="performSum"
+            android:src="@drawable/divi" />
+
+        <!-- Otros iconos para otras operaciones (multiplicación, división, etc.) -->
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:text="Resultado:"
+        android:textSize="22dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/etResultado"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#CBD1D1"
+        android:editable="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="35dp"
+        android:textStyle="bold"
+
+        ></EditText>
+
+</LinearLayout>

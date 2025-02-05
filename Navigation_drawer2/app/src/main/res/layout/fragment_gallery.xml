@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cusco"
+        android:background="@drawable/rounded_corners"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cusco"
+        android:layout_gravity="center"
+        android:textColor="@color/purple_500"
+        android:textSize="22dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold">
+    </TextView>
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#79000000">
+
+    </View>
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cusco, antigua capital del Imperio Inca, fusiona de manera única el pasado precolombino con la arquitectura colonial española. Ubicada a 3,399 metros sobre el nivel del mar, es la puerta de entrada a Machu Picchu. Su centro histórico, Patrimonio de la Humanidad, alberga sitios como la Plaza de Armas, la Catedral y el Convento de Santo Domingo, construido sobre el Templo del Sol inca. Las calles empedradas conducen a barrios pintorescos como San Blas, conocido por sus talleres artesanales. Cusco es también el punto de partida para explorar el Valle Sagrado de los Incas. La ciudad combina festivales coloridos, mercados tradicionales y una vibrante escena gastronómica, ofreciendo una experiencia cultural inmersiva."
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16dp">
+
+    </TextView>
+
+
+
+</LinearLayout>

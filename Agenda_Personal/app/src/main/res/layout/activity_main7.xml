@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity7">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Divisas"
+        android:textColor="#1B9797"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Imgrese la cantidad a convertir:"
+        android:layout_marginTop="85dp"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/peru"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/peru"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad:"
+        android:textSize="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="-45dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/cantidadsoles"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="#CBD1D1"
+
+        android:textSize="25dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-45dp"
+        >
+    </EditText>
+
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Elija el tipo de moneda que quieres convertir:"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/ibtneeuu"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/unidos"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:tag="USD"
+        android:adjustViewBounds="true"
+        android:onClick="onIconClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="78dp">
+
+    </TextView>
+
+
+
+    <ImageButton
+        android:id="@+id/ibtnmx"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/mexico"
+        android:layout_marginTop="-95dp"
+        android:layout_marginLeft="170dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:tag="MXN"
+        android:adjustViewBounds="true"
+        android:onClick="onIconClick">
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MXN"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="185dp">
+
+    </TextView>
+
+
+    <ImageButton
+        android:id="@+id/ibtnjapon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/japon"
+        android:layout_marginTop="-94dp"
+        android:layout_marginLeft="280dp"
+        android:scaleType="fitCenter"
+        android:tag="JPY"
+        android:background="@null"
+        android:adjustViewBounds="true"
+        android:onClick="onIconClick">
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JPY"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="295dp">
+
+    </TextView>
+
+
+    <ImageButton
+        android:id="@+id/ibtneuropa"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/europa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:adjustViewBounds="true"
+        android:onClick="onIconClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EUR"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="78dp">
+
+    </TextView>
+
+
+    <ImageButton
+        android:id="@+id/ibtnreino"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/reino"
+        android:layout_marginTop="-95dp"
+        android:layout_marginLeft="170dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:adjustViewBounds="true"
+        android:onClick="onIconClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GBP"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="188dp">
+
+    </TextView>
+
+
+    <ImageButton
+        android:id="@+id/ibtncanada"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/canada"
+        android:layout_marginTop="-95dp"
+        android:layout_marginLeft="280dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:adjustViewBounds="true"
+        android:onClick="onIconClick">
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAD"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="298dp">
+
+    </TextView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Resultado:"
+        android:textSize="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="60dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/result2"
+        android:layout_width="175dp"
+        android:textSize="30dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-45dp"
+        android:gravity="center"
+        android:background="#CBD1D1"
+        android:editable="false">
+
+    </EditText>
+
+</LinearLayout>

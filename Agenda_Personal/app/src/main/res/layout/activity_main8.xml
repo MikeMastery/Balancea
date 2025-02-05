@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity8">
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:text="Recordatorios"
+        android:textColor="#1B9797"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Que te gustaria recordar: "
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextRecordatorio"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="#DFE6E6"
+        android:maxLines="5"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuando te gustaria que te lo recuerde:"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="18dp">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#DFE6E6"> <!-- Establece un fondo personalizado con borde -->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="AbrirCalendario"
+        android:text="Abrir Calendario"
+        android:backgroundTint="@color/black"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-45dp" />
+
+    <Button
+        android:id="@+id/guardar_recorda"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="GUARDAR"
+        android:layout_marginTop="70dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        android:backgroundTint="#1B9797">
+
+    </Button>
+    <Button
+        android:id="@+id/recorda"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="RECORDATORIOS"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:backgroundTint="#F57F17">
+
+    </Button>
+
+    <Button
+        android:id="@+id/regresar_recorda"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="REGRESAR"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:backgroundTint="#5BEA23">
+    </Button>
+
+</LinearLayout>
