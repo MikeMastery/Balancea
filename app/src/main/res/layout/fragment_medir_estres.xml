@@ -1,14 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.medir_estres.medirEstres">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        <!-- LinearLayout dentro del ScrollView para permitir desplazamiento vertical -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
 
-</FrameLayout>
+                <!-- Título del fragmento -->
+                <TextView
+                    android:id="@+id/stressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medir el Estrés"
+                    android:textSize="28sp"
+                    android:textColor="#388e3c"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"/>
+
+                <!-- ProgressBar para mostrar el nivel de estrés -->
+                <ProgressBar
+                    android:id="@+id/stressLevelProgress"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:progress="50"
+                    android:max="100"
+                    android:indeterminate="false"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:rotation="270"
+                    android:progressDrawable="@drawable/progress_bar_style"
+                    android:layout_marginTop="20dp"/>
+
+                <!-- Indicador de diagnóstico -->
+                <TextView
+                    android:id="@+id/diagnosticText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nivel de Estrés"
+                    android:textSize="20sp"
+                    android:textColor="#388e3c"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"/>
+
+                <!-- Barra de diagnóstico -->
+                <ProgressBar
+                    android:id="@+id/diagnosticBar"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:progress="50"
+                    android:max="100"
+                    android:indeterminate="false"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginTop="20dp"
+                    android:progressDrawable="@drawable/progress_bar_style"/>
+
+                <!-- Botón para registrar cómo se siente el usuario -->
+                <Button
+                    android:id="@+id/feelingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cómo te sientes?"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:background="#388e3c"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"/>
+
+                <!-- Sugerencias de relajación -->
+                <TextView
+                    android:id="@+id/relaxationTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tómate un respiro..."
+                    android:textSize="18sp"
+                    android:textColor="#388e3c"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"/>
+
+                <!-- Diagnóstico del estrés -->
+                <TextView
+                    android:id="@+id/stressDiagnosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estrés: Moderado"
+                    android:textSize="20sp"
+                    android:textColor="#f57c00"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"/>
+
+        </LinearLayout>
+
+</ScrollView>

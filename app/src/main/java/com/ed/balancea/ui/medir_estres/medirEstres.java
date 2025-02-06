@@ -1,49 +1,35 @@
 package com.ed.balancea.ui.medir_estres;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
+import androidx.fragment.app.Fragment;
 import com.ed.balancea.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link medirEstres#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class medirEstres extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private ProgressBar stressLevelProgress;
+    private Button feelingButton;
+    private TextView relaxationTips;
+    private TextView stressTitle;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    // Para simular el cambio en el nivel de estrés
+    private int stressLevel = 50; // Valor inicial del estrés
 
     public medirEstres() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment medirEstres.
-     */
-    // TODO: Rename and change types and number of parameters
     public static medirEstres newInstance(String param1, String param2) {
         medirEstres fragment = new medirEstres();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putString("param1", param1);
+        args.putString("param2", param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,16 +37,50 @@ public class medirEstres extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_medir_estres, container, false);
+        // Inflar el layout
+        View view = inflater.inflate(R.layout.fragment_medir_estres, container, false);
+
+        // Vincular las vistas
+        stressLevelProgress = view.findViewById(R.id.stressLevelProgress);
+        feelingButton = view.findViewById(R.id.feelingButton);
+        relaxationTips = view.findViewById(R.id.relaxationTips);
+        stressTitle = view.findViewById(R.id.stressTitle);
+
+        // Acción cuando el usuario presiona el botón de "¿Cómo te sientes?"
+        feelingButton.setOnClickListener(v -> {
+            // Lógica para registrar cómo se siente el usuario
+            stressLevel = (stressLevel + 10) % 100; // Aumentar el nivel de estrés (simulación)
+            updateStressLevel();
+
+            // Mostrar mensaje de feedback
+            Toast.makeText(getContext(), "¡Haz tomado el primer paso para relajarte!", Toast.LENGTH_SHORT).show();
+        });
+
+        return view;
+    }
+
+    // Método para actualizar el nivel de estrés en el ProgressBar
+    private void updateStressLevel() {
+        stressLevelProgress.setProgress(stressLevel);
+
+        // Cambiar el color o el mensaje de relajación según el nivel de estrés
+        if (stressLevel < 30) {
+            relaxationTips.setText("¡Relajado! Sigue así.");
+            relaxationTips.setTextColor(getResources().getColor(R.color.green));
+            stressTitle.setText("Nivel de Estrés: Bajo");
+        } else if (stressLevel < 60) {
+            relaxationTips.setText("Tómate un respiro.");
+            relaxationTips.setTextColor(getResources().getColor(R.color.yellow));
+            stressTitle.setText("Nivel de Estrés: Moderado");
+        } else {
+            relaxationTips.setText("Respira profundamente.");
+            relaxationTips.setTextColor(getResources().getColor(R.color.red));
+            stressTitle.setText("Nivel de Estrés: Alto");
+        }
     }
 }
