@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Balancea.Card.Dark" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">#242424</item>
+        <item name="strokeColor">#424242</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+</resources>

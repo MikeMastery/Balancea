@@ -4,17 +4,39 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Balancea!" />
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/perfil2"
+            android:title="Perfil" />
+
+        <item
+            android:id="@+id/nav_medirEstres"
+            android:icon="@drawable/estres"
+            android:title="Mide tu estrés" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:icon="@drawable/escucha"
+            android:title="Musica relajante" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:icon="@drawable/tiempo"
+            android:title="Gestión del tiempo" />
+        <item
+            android:id="@+id/nav_cludActividades"
+            android:icon="@drawable/actividad"
+            android:title="Club y actividades" />
+        <item
+            android:id="@+id/nav_contenidoEducativo"
+            android:icon="@drawable/libro"
+            android:title="Contenido educativo" />
+        <item
+            android:id="@+id/nav_planes"
+            android:icon="@drawable/plan"
+            android:title="Planes" />
+        <item
+            android:id="@+id/nav_acercaDe"
+            android:icon="@drawable/acerca"
+            android:title="Acerca de" />
     </group>
 </menu>

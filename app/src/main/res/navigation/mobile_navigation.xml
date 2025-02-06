@@ -5,6 +5,19 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_home">
 
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.ed.balancea.ui.perfil.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_medirEstres"
+        android:name="com.ed.balancea.ui.medir_estres.medirEstres"
+        android:label="Mide tu estrés"
+        tools:layout="@layout/fragment_medir_estres" />
+
     <fragment
         android:id="@+id/nav_home"
         android:name="com.ed.balancea.ui.home.HomeFragment"
@@ -14,12 +27,35 @@
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.ed.balancea.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="Musica Relajante"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.ed.balancea.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="Gestión del tiempo"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_cludActividades"
+        android:name="com.ed.balancea.ui.cludActividades.cludActividades"
+        android:label="Clud y actividades"
+        tools:layout="@layout/fragment_clud_actividades" />
+
+    <fragment
+        android:id="@+id/nav_contenidoEducativo"
+        android:name="com.ed.balancea.ui.contenidoEducativo.contenidoEducativo"
+        android:label="Contenido educativo"
+        tools:layout="@layout/fragment_contenido_educativo" />
+
+    <fragment
+        android:id="@+id/nav_planes"
+        android:name="com.ed.balancea.ui.planes.planes"
+        android:label="Planes"
+        tools:layout="@layout/fragment_planes" />
+    <fragment
+        android:id="@+id/nav_acercaDe"
+        android:name="com.ed.balancea.ui.acercaDe.acercaDe"
+        android:label="Acerca de"
+        tools:layout="@layout/fragment_acerca_de" />
 </navigation>
