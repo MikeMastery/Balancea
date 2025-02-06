@@ -1,14 +1,386 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.planes.planes">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        xmlns:tools="http://schemas.android.com/tools
+"
+        android:orientation="vertical"
+        tools:context=".ui.planes.planes"
+        android:background="@drawable/fondoplanes">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Elige tu plan de relajación"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Plan Básico -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="560dp"
+                    android:layout_marginEnd="8dp"
+
+                    app:cardCornerRadius="15dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="#2196F3"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/gradient"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Plan Básico"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="center"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="S/. 10"
+                                android:textSize="56dp"
+                                android:textColor="#FFFF"
+                                android:layout_gravity="center"
+
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mensual"
+                                android:textSize="16dp"
+                                android:textColor="#FFFF"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Planes Personalizados"
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="60dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Seguimiento del proceso"
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="200dp"
+                            android:backgroundTint="#2196F3"
+                            android:textSize="19dp"
+                            android:text="Seleccionar"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            app:iconGravity="textStart"
+                            />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Plan Premium (Destacado) -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="320dp"
+                    android:layout_height="560dp"
+                    android:layout_marginHorizontal="8dp"
+                    app:cardCornerRadius="18dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="#673AB7"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:background="@drawable/gradient">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Plan Premium"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="center"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S/. 35"
+                            android:textSize="56dp"
+                            android:textColor="#FFFF"
+                            android:layout_gravity="center"
+
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mensual"
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Planes Personalizados"
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="60dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Seguimiento del proceso"
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- APP interactiva."
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Alianzas estrategicas."
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="130dp"
+                            android:backgroundTint="#2196F3"
+                            android:textSize="19dp"
+                            android:text="Seleccionar"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            app:iconGravity="textStart"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="320dp"
+                    android:layout_height="560dp"
+                    android:layout_marginHorizontal="8dp"
+                    app:cardCornerRadius="18dp"
+                    app:strokeWidth="4dp"
+                    app:strokeColor="#D10C0C"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:background="@drawable/gradient">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Plan Familiar"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="center"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S/. 50"
+                            android:textSize="56dp"
+                            android:textColor="#FFFF"
+                            android:layout_gravity="center"
+
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mensual"
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Planes Personalizados"
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="60dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Seguimiento del proceso"
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- APP interactiva."
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Alianzas estrategicas."
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Lugares de Esparcimiento."
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- Sistemas de Recompensas."
+                            android:textSize="16dp"
+                            android:textColor="#FFFF"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold">
+                        </TextView>
+
+
+                        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="70dp"
+                            android:backgroundTint="#2196F3"
+                            android:textSize="19dp"
+                            android:text="Seleccionar"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            app:iconGravity="textStart"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>

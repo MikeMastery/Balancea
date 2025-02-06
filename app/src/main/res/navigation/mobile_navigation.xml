@@ -54,6 +54,11 @@
         android:label="Planes"
         tools:layout="@layout/fragment_planes" />
     <fragment
+        android:id="@+id/nav_desconexionFamiliar"
+        android:name="com.ed.balancea.ui.desconexionFamiliar.desconexionFamiliar"
+        android:label="Desconexión familiar"
+        tools:layout="@layout/fragment_desconexion_familiar" />
+    <fragment
         android:id="@+id/nav_acercaDe"
         android:name="com.ed.balancea.ui.acercaDe.acercaDe"
         android:label="Acerca de"

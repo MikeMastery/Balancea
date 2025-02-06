@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.cludActividades.cludActividades">
+    android:background="@drawable/fondoclubyact"
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
 
-</FrameLayout>
+        tools:context=".ui.cludActividades.cludActividades">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="23dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/soga">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Comunidad en línea: Crea un espacio seguro para que los usuarios compartan experiencias, consejos y se motiven mutuamente.
+Desafíos y retos: Organiza desafíos grupales para fomentar la participación y el compromiso.
+Eventos virtuales: Ofrece talleres, seminarios y sesiones de preguntas y respuestas con expertos en bienestar. "
+                android:textSize="20dp"
+                android:justificationMode="inter_word"
+
+                android:textStyle="bold"
+                android:layout_margin="12dp">
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

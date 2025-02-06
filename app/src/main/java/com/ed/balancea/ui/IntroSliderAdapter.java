@@ -31,7 +31,7 @@ public class IntroSliderAdapter extends RecyclerView.Adapter<IntroSliderAdapter.
         backgrounds = new int[]{
                 R.drawable.ini1,
                 R.drawable.ini2,
-                R.drawable.init3
+                R.drawable.ini3
         };
 
         buttonTexts = new String[]{

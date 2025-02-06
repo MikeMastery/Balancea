@@ -2,13 +2,39 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/acercade"
     android:layout_height="match_parent"
     tools:context=".ui.acercaDe.acercaDe">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-180dp"
+        android:src="@drawable/logo">
+    </ImageView>
+
+    <!-- Versión de la aplicación -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/version_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="270dp"
+        android:text="Versión 1.0"
+        android:textSize="17sp"
+        android:textColor="#fff"/>
+
+
+    <!-- Derechos de autor -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:text="© 2024 AESN. Todos los derechos reservados."
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnPrimary" />
+
 
 </FrameLayout>

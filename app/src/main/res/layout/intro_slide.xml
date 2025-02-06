@@ -31,7 +31,7 @@
             android:id="@+id/btn_next"
             android:layout_width="168dp"
             android:layout_height="68dp"
-            android:backgroundTint="#608560DB"
+            android:backgroundTint="#9E81D9E4"
             android:fontFamily="@font/regular"
             android:layout_marginTop="540dp"
             app:cornerRadius="10dp"
